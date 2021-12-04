@@ -3,7 +3,7 @@
 
 ### 简介
 
-* 因为scoop 至今没有一个很好的备份方法，所以把现有的方法分享出来，但是因为过程稍微麻烦了一点，没有达到完美的效果
+* 因为scoop 至今没有一个很好的备份方法，所以把现有的方法分享出来
 
 * 到目前为止，一共只有两个备份脚本
   * [KNOXDEV/scoop-backup](https://git.irs.sh/KNOXDEV/scoop-backup)
@@ -16,16 +16,8 @@
 
 ### 使用
 
-* 先安装错误的scoop-backup
-  * `scoop bucket add knox-scoop https://git.irs.sh/KNOXDEV/knox-scoop`
-  * `scoop install scoop-backup`
-* 进入`apps/scoop-backup`文件夹中替换`scoop-backup.ps1`脚本
+* 安装我的bucket：`scoop bucket add diklios https://github.com/diklios5768/diklios-scoop-bucket`
+* 安装备份脚本：`scoop install diklios/scoop-backup`
 * 备份：`scoop-backup`
-* 导入：在powershell中直接执行备份的脚本
-
-* 最后再提供一个自用的备份`backup.ps1`，包含了非常多的软件源
-
-### 后续
-
-- 可能会在今年年底左右自建一个bucket，方便直接安装
-
+  * 备份完会提示备份文件位置
+* 重新安装：直接执行PowerShell脚本即可

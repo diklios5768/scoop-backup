@@ -1,4 +1,4 @@
-# scoop-backup-pwsh
+# scoop-backup
 * scoop backup **PowerShell** script
 
 ### 简介
@@ -21,3 +21,7 @@
 * 备份：`scoop-backup`
   * 备份完会提示备份文件位置
 * 重新安装：直接执行PowerShell脚本即可
+
+### 注意
+* 如果安装了main bucket中的 scoop-search，请注意千万别加hooks，因为[#13](https://github.com/shilangyu/scoop-search/issues/13)，所以不仅命令行中的help会报错，这个备份脚本也会出错
+  * 建议用别名，或者直接手输`scoop-search`，这问题暂时不好解决

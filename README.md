@@ -1,7 +1,7 @@
 # scoop-backup
 * scoop backup **PowerShell** script
 
-# 注意
+### 注意
 * [KNOXDEV/scoop-backup](https://git.irs.sh/KNOXDEV/scoop-backup)问题最近基本修复完毕，即使是使用Ash258的scoop-core也可以备份
 
 ### 简介
